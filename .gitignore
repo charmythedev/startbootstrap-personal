@@ -37,3 +37,6 @@ build/
 # --- Compiled assets ---
 *.egg-info/
 *.egg
+
+dist/static/assets/resume.json
+dist/static/assets/resume.pdf
