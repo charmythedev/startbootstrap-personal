@@ -1,1 +1,39 @@
 node_modules
+# --- Python ---
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual environments
+venv/
+env/
+.venv/
+
+# --- Environment variables ---
+.env
+
+# --- Flask / App data ---
+instance/
+*.db
+*.sqlite3
+
+# --- VS Code ---
+.vscode/
+*.code-workspace
+
+# --- OS files ---
+.DS_Store
+Thumbs.db
+
+# --- Node / Frontend (your project has package.json) ---
+node_modules/
+dist/
+build/
+
+# --- Logs ---
+*.log
+
+# --- Compiled assets ---
+*.egg-info/
+*.egg
