@@ -14,7 +14,7 @@
                 <h2 class="text-primary fw-bolder mb-0">Resume Overview</h2>
 
                 <a class="btn btn-primary px-4 py-3"
-                   href="mailto:youralias@proton.me?subject=Resume Request">
+                   href="mailto:charmythedev@gmail.com?subject=Resume Request">
                     <div class="d-inline-block bi bi-download me-2"></div>
                     Request Resume
                 </a>
@@ -24,6 +24,8 @@
             <section>
                 <div class="card shadow border-0 rounded-4 mb-5">
                     <div class="card-body p-5">
+
+                        {% if resume_json %}
 
                         <!-- Professional Skills -->
                         <div class="mb-5">
@@ -69,12 +71,18 @@
                             {% endfor %}
                         </div>
 
+                        {% else %}
+
+                        <!-- Fallback when JSON is missing -->
+                        <p class="text-center text-muted mb-0">
+                            Full resume available upon request.
+                        </p>
+
+                        {% endif %}
+
                     </div>
                 </div>
             </section>
-
-            <!-- Fallback message for removed sections -->
-            <p class="text-center text-muted">Full resume available upon request.</p>
 
         </div>
     </div>
