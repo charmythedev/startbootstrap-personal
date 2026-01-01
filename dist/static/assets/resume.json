@@ -1,0 +1,88 @@
+{
+  "name": "",
+  "contact": {
+    "location": "",
+    "phone": "",
+    "email": "",
+    "github": ""
+  },
+
+  "summary": "",
+
+  "skills": {
+    "technical": [
+      "Python",
+      "Flask",
+      "SQLAlchemy",
+      "MySQL",
+      "Tkinter",
+      "Jinja",
+      "HTML/CSS",
+      "Bootstrap",
+      "Git",
+      "GitHub"
+    ],
+    "core": [
+      "Object-oriented programming",
+      "REST APIs",
+      "Debugging",
+      "UI design",
+      "Data parsing",
+      "Deployment workflows"
+    ],
+    "soft": [
+      "Communication",
+      "Teamwork",
+      "Customer service",
+      "Documentation",
+      "Adaptability"
+    ]
+  },
+
+  "languages": [
+    "Python",
+    "SQL",
+    "HTML/CSS"
+  ],
+
+  "projects": [
+    {
+      "name": "Synopsizer 3000",
+      "tech": ["Python", "Tkinter", "BeautifulSoup", "Gemini API"],
+      "description": "Desktop application that fetches webpage content and generates AI-powered summaries. Includes URL parsing, error handling, and a clean Tkinter UI with modular architecture."
+    },
+    {
+      "name": "InstantBlog",
+      "tech": ["Flask", "Jinja", "HTML/CSS"],
+      "description": "Dynamic blog platform with routing, templates, form handling, and responsive Bootstrap styling. Built with maintainability and readability in mind."
+    },
+    {
+      "name": "Dice Game Prototype",
+      "tech": ["Python", "OOP"],
+      "description": "Modular dice-based game system with scoring, randomness, and replayability. Demonstrates object-oriented design and game-state management."
+    }
+  ],
+
+  "experience": [],
+
+  "education": {
+    "degree": "",
+    "institution": "",
+    "graduation": "",
+    "honors": [],
+    "certifications": [
+      {
+        "name": "MySQL",
+        "provider": "Udemy",
+        "date": "2022"
+      },
+      {
+        "name": "100 Days of Python",
+        "provider": "Udemy",
+        "date": "2025 (in progress)"
+      }
+    ]
+  },
+
+  "leadership_and_honors": []
+}
