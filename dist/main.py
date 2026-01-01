@@ -77,13 +77,16 @@ def contact():
 @app.route("/resume")
 def resume():
     try:
-        with open("static/assets/resume.json", "r") as f:
+        with open("dist/static/assets/resume.json", "r") as f:
             resume_json = json.load(f)
-        return render_template("resume.html", current_year=current_year, resume_json=resume_json)
     except FileNotFoundError:
-        return render_template("resume.html",current_year=current_year)
+        resume_json = None
 
-
+    return render_template(
+        "resume.html",
+        current_year=current_year,
+        resume_json=resume_json
+    )
 
 
 
