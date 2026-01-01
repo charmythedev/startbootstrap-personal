@@ -76,9 +76,12 @@ def contact():
 
 @app.route("/resume")
 def resume():
-    with open("dist/static/assets/resume.json", "r") as f:
-        resume_json = json.load(f)
-    return render_template("resume.html", current_year=current_year, resume_json=resume_json)
+    try:
+        with open("dist/static/assets/resume.json", "r") as f:
+            resume_json = json.load(f)
+        return render_template("resume.html", current_year=current_year, resume_json=resume_json)
+    except FileNotFoundError:
+        return render_template("resume.html",current_year=current_year)
 
 
 
@@ -94,4 +97,4 @@ def resume():
 
 
 if __name__ == "__main__":
-    app.run(host="0.0.0.0",debug=False, port=5000)
+    app.run(host="0.0.0.0",debug=True, port=5000)
