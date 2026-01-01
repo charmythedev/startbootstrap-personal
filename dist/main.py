@@ -77,7 +77,7 @@ def contact():
 @app.route("/resume")
 def resume():
     try:
-        with open("dist/static/assets/resume.json", "r") as f:
+        with open("static/assets/resume.json", "r") as f:
             resume_json = json.load(f)
     except FileNotFoundError:
         resume_json = None
