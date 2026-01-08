@@ -23,7 +23,7 @@ app.config["SECRET_KEY"] = os.getenv("FLASK_SECRET")
 
 
 # Example project data
-response = requests.get("hhttps://api.npoint.io/28f1d41ab1ed9425b113")
+response = requests.get("https://api.npoint.io/28f1d41ab1ed9425b113")
 response.raise_for_status()
 projects = response.json()
 
